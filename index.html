@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinswitch Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar img {
+            height: 30px;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .login-btn {
+            background-color: yellow;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #e6f7ff;
+            background-image: url('https://coinswitch.co/static/b842761cedbc2549f7a11970a96f6800/3c67b/ventures-logo-bg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #000;
+            margin: 0;
+        }
+
+        .hero h1 span {
+            color: #4c94ff;
+            transition: color 0.5s ease;
+        }
+
+        .hero h1:hover span {
+            color: #ff6961;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-top: 20px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img src="https://coinswitch.co/static/1788d3bc2b1b13a5936d42a16634d2e8/f6582/logo.svg" alt="Coinswitch">
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Coins</a></li>
+            <li><a href="#">Ventures</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Company</a></li>
+        </ul>
+        <button class="login-btn">Login To Pro</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Innovation <span>Our Fuel</span></h1>
+        <p>CoinSwitch Ventures invests in the most promising Web3 and blockchain projects in India. Does that sound like you?</p>
+    </section>
+
+</body>
+</html>
